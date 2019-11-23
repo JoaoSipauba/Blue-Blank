@@ -13,18 +13,34 @@ sequelize.authenticate().then(function() {
 
 // Criar table
 const Usuarios = sequelize.define('usuarios',{
+    cpf:{
+        type: Sequelize.STRING
+    },
+    email:{
+        type: Sequelize.STRING
+    },
     nome:{
         type: Sequelize.STRING
     },
-    sobrenome:{
-        type: Sequelize.STRING
-    },
-    idade:{
+    conta:{
         type: Sequelize.INTEGER
     },
-    email:{
+    senha:{
         type: Sequelize.STRING
     }
 });
 
 Usuarios.sync({force:true})
+
+
+
+
+
+
+// Usuarios.create({
+//     cpf:,
+//     email:,
+//     nome:,
+//     conta:,
+//     senha:
+// })

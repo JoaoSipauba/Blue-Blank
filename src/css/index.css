@@ -9,7 +9,7 @@ body{
 section{
     margin: 100px 0px 0px 0px;
     width: 500px;
-    width: 500px;
+    height: 500px;
 }
 #form-header{
     text-align: center;
@@ -18,10 +18,18 @@ section{
 #form-header h1{
     color: #9090ff;
     font-family: 'Quicksand', sans-serif;
-    font-size: 40px;
+    font-size: 80px;
 }
 #linha hr{
     background-color: #000;
     height: 2px;;
 }
-
+#btn{
+    display: flex;
+    justify-content: center;
+}
+button{
+    padding: 5%;
+    height: 60px;
+    width: 150px;
+}

@@ -8,11 +8,11 @@ function dados(){
         tam = 1;
     };
 
-    localStorage.setItem(`user ${tam}`, document.getElementById('username').value);
+    localStorage.setItem(`nome ${tam}`, document.getElementById('nome').value);
     localStorage.setItem(`password ${tam}`, document.getElementById('password').value);
     localStorage.setItem(`account ${tam}`, document.getElementById('account').value);
 
-    document.getElementById('username').value = "";
+    document.getElementById('nome').value = "";
     document.getElementById('password').value = "";
     document.getElementById('account').value = "";
     $('seletor').val('')

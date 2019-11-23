@@ -11,10 +11,8 @@
     <link rel="stylesheet" href="../css/login.css">
     <title>Blue Bank - Login</title>
 </head>
-<body>
-    
-    <section>
-        
+<body>   
+    <section>        
             <div id="form-header">
                 <h1>Blue Bank - Login</h1>
             </div>
@@ -24,10 +22,9 @@
             </div>
 
             <form>
-
-                <div class="form-grou p">
+                <div class="form-group">
                     <label for="exampleInputNumberOfCount"><h3>Número da conta</h3></label>
-                    <input type="text" class="form-control" id="account" placeholder="12345678-9" maxlength="10">
+                    <input type="text" class="form-control" id="account" placeholder="X.XXX-X" maxlength="7">
                 </div>
 
 
@@ -37,15 +34,13 @@
                 </div>
 
                 <div id="button">
+                    <a href="/index.html"><button type="button" class="btn btn-primary">Cancelar</button></a>
                     <button type="button" class="btn btn-primary" data-element="minhadiv" id="login-btn" onclick="login()" onclick="Mudarestado('minhadiv')">Login</button>
                 </div>
-
-                
+              
             </form>
 
-            <div class="alert alert-danger" id="minhadiv" role="alert">
-                
-            </div>
+            
 
         </section>
 
