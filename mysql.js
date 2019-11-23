@@ -30,17 +30,10 @@ const Usuarios = sequelize.define('usuarios',{
     }
 });
 
-Usuarios.sync({force:true})
-
-
-
-
-
-
-// Usuarios.create({
-//     cpf:,
-//     email:,
-//     nome:,
-//     conta:,
-//     senha:
-// })
+Usuarios.create({
+    cpf: "604.182.593-05",
+    email:"joaosipauba@hotmail.com",
+    nome:"joao sipauba silva pessoa",
+    conta: "11235",
+    senha: "123"
+})
