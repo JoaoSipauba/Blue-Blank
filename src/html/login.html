@@ -22,21 +22,26 @@
             </div>
 
             <form>
-                <div class="form-group">
-                    <label for="exampleInputNumberOfCount"><h3>Número da conta</h3></label>
-                    <input type="text" class="form-control" id="account" placeholder="X.XXX-X" maxlength="7">
+
+                <div id="formulario">
+
+                    <div class="form-group">
+                        <label for="exampleInputNumberOfCount"><h3>Número da conta</h3></label>
+                        <input type="text" class="form-control" id="account" placeholder="X.XXX-X" maxlength="7">
+                    </div>
+    
+    
+                    <div class="form-group">
+                        <label for="exampleInputPassword1"><h3>Senha</h3></label>
+                        <input type="password" class="form-control" id="password" aria-describedby="password" placeholder="Senha">
+                    </div>
+
+                    <div id="form-button">
+                        <a href="/index.html"><button type="button" class="btn btn-primary">Cancelar</button></a>
+                        <button type="button" class="btn btn-primary" data-element="minhadiv" id="login-btn" onclick="login()" onclick="Mudarestado('minhadiv')">Login</button>
+                    </div>
                 </div>
 
-
-                <div class="form-group">
-                    <label for="exampleInputPassword1"><h3>Senha</h3></label>
-                    <input type="password" class="form-control" id="password" aria-describedby="password" placeholder="Senha">
-                </div>
-
-                <div id="button">
-                    <a href="/index.html"><button type="button" class="btn btn-primary">Cancelar</button></a>
-                    <button type="button" class="btn btn-primary" data-element="minhadiv" id="login-btn" onclick="login()" onclick="Mudarestado('minhadiv')">Login</button>
-                </div>
               
             </form>
 

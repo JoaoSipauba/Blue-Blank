@@ -22,12 +22,20 @@ section{
 }
 #linha hr{
     background-color: #000;
-    height: 2px;;
+    height: 2px;
 }
 #btn{
     display: flex;
     justify-content: center;
+    /* justify-content: space-between; */
 }
+
+
+#btn a {
+    padding: 5px;
+}
+
+
 button{
     padding: 5%;
     height: 60px;

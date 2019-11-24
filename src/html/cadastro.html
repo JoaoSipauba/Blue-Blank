@@ -27,54 +27,63 @@
         </div>
 
         <form>
-            <div class="form-group">
-                <label for="exampleInputNumberOfCount">
-                    <h3>CPF</h3>
-                </label>
-                <input type="text" class="form-control" id="CPF" placeholder="XXX.XXX.XXX-XX" maxlength="14">
-            </div>
+            <div id="formulario">
 
-            <div class="form-group">
-                <label for="exampleInputEmail1">
-                    <h3>Email</h3>
-                </label>
-                <input type="text" class="form-control" id="email" aria-describedby="userHelp"
-                    placeholder="pedrodasilva@gmail.com">
-            </div>
-
-            <div class="form-group">
+                <div class="form-group">
                     <label for="exampleInputNumberOfCount">
-                        <h3>Nome</h3>
+                        <h3>CPF</h3>
                     </label>
-                    <input type="text" class="form-control" id="nome" placeholder="Pedro Da Silva" maxlength="80">
+                    <input type="text" class="form-control" id="CPF" placeholder="XXX.XXX.XXX-XX" maxlength="14">
+                </div>
+    
+                <div class="form-group">
+                    <label for="exampleInputEmail1">
+                        <h3>Email</h3>
+                    </label>
+                    <input type="text" class="form-control" id="email" aria-describedby="userHelp"
+                        placeholder="pedrodasilva@gmail.com">
+                </div>
+    
+                <div class="form-group">
+                        <label for="exampleInputNumberOfCount">
+                            <h3>Nome</h3>
+                        </label>
+                        <input type="text" class="form-control" id="nome" placeholder="Pedro Da Silva" maxlength="80">
+                    </div>
+    
+                <div class="form-group">
+                    <label for="exampleInputNumberOfCount">
+                        <h3>Número da conta</h3>
+                    </label>
+                    <input type="text" class="form-control" id="account" placeholder="x.xxx-x" maxlength="7">
+                </div>
+    
+    
+                <div class="form-group">
+                    <label for="exampleInputPassword1">
+                        <h3>Senha</h3>
+                    </label>
+                    <input type="password" class="form-control" id="password" aria-describedby="password" placeholder="Senha">
                 </div>
 
-            <div class="form-group">
-                <label for="exampleInputNumberOfCount">
-                    <h3>Número da conta</h3>
-                </label>
-                <input type="text" class="form-control" id="account" placeholder="x.xxx-x" maxlength="7">
             </div>
 
-
-            <div class="form-group">
-                <label for="exampleInputPassword1">
-                    <h3>Senha</h3>
-                </label>
-                <input type="password" class="form-control" id="password" aria-describedby="password" placeholder="Senha">
+            <div id="form-btn">
+                
+                <a href="/index.html"><button type="button" class="btn btn-primary">Cancelar</button></a>
+                <button type="button" class="btn btn-primary" onclick = register() id="btAbrirModal">Concluido</button>
+                
             </div>
-
-            
-            <a href="/index.html"><button type="button" class="btn btn-primary">Cancelar</button></a>
-            <button type="button" class="btn btn-primary" onclick = register() id="btAbrirModal">Concluido</button>
 
         </form>
 
         <div id="modal" class="hide">
             <div class="modal-bg"></div>
+
             <div class="modal-content">
                 <h3>Cadastro Concluido!</h3>
             </div>
+
         </div>
 
     </section>
