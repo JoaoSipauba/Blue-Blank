@@ -1,57 +1,30 @@
 function register() {
-    const Sequelize = require('Sequelize')
-    const sequelize = new Sequelize('bluebank', 'root', '', {
-        host: 'localhost',
-        dialect: 'mysql'
-    });
-
-    sequelize.authenticate().then(function () {
-        console.log('autenticado com sucesso');
-    }).catch(function (erro) {
-        console.log("falha ao conectar " + erro);
-
-    })
-    // Criar table
-    const Usuarios = sequelize.define('usuarios', {
-        cpf: {
-            type: Sequelize.STRING
-        },
-        email: {
-            type: Sequelize.STRING
-        },
-        nome: {
-            type: Sequelize.STRING
-        },
-        conta: {
-            type: Sequelize.INTEGER
-        },
-        senha: {
-            type: Sequelize.STRING
-        }
-    });
-
     const cpf = document.getElementById('CPF').value;
     const email = document.getElementById('email').value;
     const nome = document.getElementById('nome').value;
     const account = document.getElementById('account').value;
     const password = document.getElementById('password').value;
 
-    Usuarios.create({
-        cpf: cpf,
-        email: email,
-        nome: nome,
-        conta: account,
-        senha: password
-    })
-
-
-    // document.getElementById('CPF').value = "";
-    // document.getElementById('email').value = "";
-    // document.getElementById('nome').value = "";
-    // document.getElementById('account').value = "";
-    // document.getElementById('password').value = "";
-    // $('seletor').val('')
-
+    if ((cpf || email || nome || account || password)== ""){
+        console.log('aaaaaaaaaaaaa');
+        console.log(cpf,email,nome,account,password);
+                
+    }
+    if((cpf && email && nome && account && password)!= ""){
+        // localStorage.setItem("cpf",cpf)
+        // localStorage.setItem("email",email)
+        // localStorage.setItem("nome",nome)
+        // localStorage.setItem("account",account)
+        // localStorage.setItem("password",password)
+    
+        // document.getElementById('CPF').value = "";
+        // document.getElementById('email').value = "";
+        // document.getElementById('nome').value = "";
+        // document.getElementById('account').value = "";
+        // document.getElementById('password').value = "";
+        // $('seletor').val('')
+    }
+    
 };
 
 function login() {
