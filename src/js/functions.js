@@ -9,6 +9,7 @@ function register() {
     
     if ((cpf === "") || (email=== "") || (nome=== "") || (account=== "") || (password== "")){
         console.log("input vazio");
+        $('#alert').removeAttr('hidden')
         
     }
     if((cpf!== "") && (email!== "") && (nome!== "") && (account!== "") && (password!== "")){
@@ -23,8 +24,7 @@ function register() {
         document.getElementById('nome').value = "";
         document.getElementById('account').value = "";
         document.getElementById('password').value = "";
-        $('seletor').val('')  
-         
+        $('seletor').val('')         
         modal.show(500);
         modalBackground.click(function () {
             modal.hide(500);
