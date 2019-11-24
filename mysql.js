@@ -22,23 +22,23 @@ const Usuarios = sequelize.define('usuarios', {
         type: Sequelize.STRING
     },
     conta: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
     },
     senha: {
         type: Sequelize.STRING
     }
 });
 
-const cpf = document.getElementById('CPF').value;
-const email = document.getElementById('email').value;
-const nome = document.getElementById('nome').value;
-const account = document.getElementById('account').value;
-const password = document.getElementById('password').value;
+const cpf = localStorage.getItem("cpf")
+const email = localStorage.getItem("email")
+const nome = localStorage.getItem("nome")
+const conta = localStorage.getItem("account")
+const senha = localStorage.getItem("password")
 
 Usuarios.create({
     cpf: cpf,
     email: email,
     nome: nome,
-    conta: account,
-    senha: password
+    conta: conta,
+    senha: senha
 })
