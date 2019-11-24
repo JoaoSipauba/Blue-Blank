@@ -1,39 +1,44 @@
 const Sequelize = require('Sequelize')
-const sequelize = new Sequelize('bluebank','root','',{
-    host:'localhost',
-    dialect:'mysql'
+const sequelize = new Sequelize('bluebank', 'root', '', {
+    host: 'localhost',
+    dialect: 'mysql'
 });
 
-sequelize.authenticate().then(function() {
+sequelize.authenticate().then(function () {
     console.log('autenticado com sucesso');
 }).catch(function (erro) {
-    console.log("falha ao conectar "+erro);
-    
-})
+    console.log("falha ao conectar " + erro);
 
+})
 // Criar table
-const Usuarios = sequelize.define('usuarios',{
-    cpf:{
+const Usuarios = sequelize.define('usuarios', {
+    cpf: {
         type: Sequelize.STRING
     },
-    email:{
+    email: {
         type: Sequelize.STRING
     },
-    nome:{
+    nome: {
         type: Sequelize.STRING
     },
-    conta:{
+    conta: {
         type: Sequelize.INTEGER
     },
-    senha:{
+    senha: {
         type: Sequelize.STRING
     }
 });
 
+const cpf = document.getElementById('CPF').value;
+const email = document.getElementById('email').value;
+const nome = document.getElementById('nome').value;
+const account = document.getElementById('account').value;
+const password = document.getElementById('password').value;
+
 Usuarios.create({
-    cpf: "604.182.593-05",
-    email:"joaosipauba@hotmail.com",
-    nome:"joao sipauba silva pessoa",
-    conta: "11235",
-    senha: "123"
+    cpf: cpf,
+    email: email,
+    nome: nome,
+    conta: account,
+    senha: password
 })

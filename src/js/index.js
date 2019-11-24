@@ -1,46 +1,81 @@
-function dados(){
-    //variavel com tamanho do banco de dados
-    var tam = localStorage.length;
-    //tirando 2 keys
-    tam = (tam - 2) + 1;
-    //verificando se o tamanho é -1
-    if(tam == -1){
-        tam = 1;
-    };
+function register() {
+    const Sequelize = require('Sequelize')
+    const sequelize = new Sequelize('bluebank', 'root', '', {
+        host: 'localhost',
+        dialect: 'mysql'
+    });
 
-    localStorage.setItem(`nome ${tam}`, document.getElementById('nome').value);
-    localStorage.setItem(`password ${tam}`, document.getElementById('password').value);
-    localStorage.setItem(`account ${tam}`, document.getElementById('account').value);
+    sequelize.authenticate().then(function () {
+        console.log('autenticado com sucesso');
+    }).catch(function (erro) {
+        console.log("falha ao conectar " + erro);
 
-    document.getElementById('nome').value = "";
-    document.getElementById('password').value = "";
-    document.getElementById('account').value = "";
-    $('seletor').val('')
-    
-;};
+    })
+    // Criar table
+    const Usuarios = sequelize.define('usuarios', {
+        cpf: {
+            type: Sequelize.STRING
+        },
+        email: {
+            type: Sequelize.STRING
+        },
+        nome: {
+            type: Sequelize.STRING
+        },
+        conta: {
+            type: Sequelize.INTEGER
+        },
+        senha: {
+            type: Sequelize.STRING
+        }
+    });
 
-function login(){
+    const cpf = document.getElementById('CPF').value;
+    const email = document.getElementById('email').value;
+    const nome = document.getElementById('nome').value;
+    const account = document.getElementById('account').value;
+    const password = document.getElementById('password').value;
+
+    Usuarios.create({
+        cpf: cpf,
+        email: email,
+        nome: nome,
+        conta: account,
+        senha: password
+    })
+
+
+    // document.getElementById('CPF').value = "";
+    // document.getElementById('email').value = "";
+    // document.getElementById('nome').value = "";
+    // document.getElementById('account').value = "";
+    // document.getElementById('password').value = "";
+    // $('seletor').val('')
+
+};
+
+function login() {
     var pass, acc;
     var acc = document.getElementById('account').value;
 
 
-    for (var i = 0; i < localStorage.length; i++){
-        if (i != 0){
+    for (var i = 0; i < localStorage.length; i++) {
+        if (i != 0) {
             pass = document.getElementById('password').value
             acc = document.getElementById('account').value
             console.log(pass)
             console.log(acc)
-            if (pass == localStorage.getItem(`password ${i}`) && acc == localStorage.getItem(`account ${i}`)){
+            if (pass == localStorage.getItem(`password ${i}`) && acc == localStorage.getItem(`account ${i}`)) {
                 document.getElementById('password').value = "";
                 document.getElementById('account').value = "";
                 location.href = "index.html";
                 break
-            }else if(pass != localStorage.getItem(`password ${i}`) && acc != localStorage.getItem(`account ${i}`)){
+            } else if (pass != localStorage.getItem(`password ${i}`) && acc != localStorage.getItem(`account ${i}`)) {
 
                 console.log('deu certo!')
                 var txt = $('.alert alert-danger').text('Erro!')
 
-                
+
             };
             break
         };
