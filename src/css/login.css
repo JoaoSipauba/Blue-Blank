@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeee;
+}
+section{
+    margin: 180px 0px 0px 0px;
+}
+
+#formulario{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+
+#form-button button{
+    margin-right: 10px;
+}
+
+#form-btn{
+    display: flex;
+    justify-content: center;   
+}
+
+#form-btn button {
+    margin: 10px;
+}
+
+
+.form-control{
+    width: 500px;
+}
+#form-header{
+    text-align: center;
+}
+#form-header h1{
+    color: #9090ff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 70px;
+}
+#linha hr{
+    background-color: #000;
+    height: 2px;;
+}
+
+
+/*Caixa flutuante*/
+.hide {
+    display: none;
+}
+
+.modal-bg {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: gainsboro;
+    opacity: 0.5;
+}
+
+.modal-content {
+    position: fixed;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    width: 200px;
+    height: 30px;
+    line-height: 20px;
+    top: 50px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #21abce;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.modal-content h3{
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 1px;
+}
