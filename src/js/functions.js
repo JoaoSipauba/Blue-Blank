@@ -26,7 +26,7 @@ function register() {
         modal.show(500);
         modalBackground.click(function () {
             modal.hide(500);
-            location.href = "../../index.html";
+            // location.href = "../../index.html";
         });  
         $(".alert").alert('close');
     }

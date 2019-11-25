@@ -28,17 +28,18 @@ const Usuarios = sequelize.define('usuarios', {
         type: Sequelize.STRING
     }
 });
+// Usuarios.sync({force:true})
 
-const cpf = localStorage.getItem("cpf")
-const email = localStorage.getItem("email")
-const nome = localStorage.getItem("nome")
-const conta = localStorage.getItem("account")
-const senha = localStorage.getItem("password")
+// const cpf = localStorage.getItem("cpf")
+// const email = localStorage.getItem("email")
+// const nome = localStorage.getItem("nome")
+// const conta = localStorage.getItem("account")
+// const senha = localStorage.getItem("password")
 
 Usuarios.create({
-    cpf: cpf,
-    email: email,
-    nome: nome,
-    conta: conta,
-    senha: senha
+    cpf: 'cpf',
+    email: 'email',
+    nome: 'nome',
+    conta: 'conta',
+    senha: 'senha'
 })
