@@ -1,3 +1,4 @@
+
 .navbar{
     background-image: url(/img/backgroudn\ nav.jpg);
 }
@@ -9,7 +10,6 @@
 .btn{
     font-size: 14px;
     font-family: 'Noto Sans JP', sans-serif;
-    
 }
 
 .btn-outline-primary{
@@ -17,11 +17,6 @@
 }
 .btn-outline-primary:not(:disabled):not(.disabled) {
     color: white;
-    border-radius: 100px;
-}
-
-
-.btn-primary:not(:disabled):not(.disabled) {
     border-radius: 100px;
 }
 

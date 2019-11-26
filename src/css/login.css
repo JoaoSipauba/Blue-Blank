@@ -4,8 +4,49 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #eeeeee;
+    background-image: url(/img/backgroudn\ nav.jpg);
 }
+
+/* NAV */
+
+.navbar{
+    background-color: rgba(255, 255, 255, 0.842);
+}
+
+#logoBlue{
+    margin: 2px;
+}
+
+.btn{
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+    
+}
+
+
+.btn-primary:not(:disabled):not(.disabled) {
+    border-radius: 100px;
+}
+
+.form-inline {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#txtBlue{
+    display: flex;
+    justify-content: center;
+    color: #0069d9;
+    font-family: 'Squada One', cursive;
+    font-size: xx-large;
+}
+
+.navbar-brand{
+    margin: 0 auto;
+}
+
+
 section{
     margin: 180px 0px 0px 0px;
 }
@@ -16,6 +57,27 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;    
+}
+
+#formulario h3{
+    color: aliceblue;
+}
+
+.form-control{
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+#formulario input{
+    background-color: transparent;
+    color: aliceblue;
+    border-bottom: 1px solid aliceblue;
+}
+
+
+#formulario ::placeholder{
+    color: rgba(240, 248, 255, 0.623);
 }
 
 #form-button button{
@@ -39,12 +101,12 @@ section{
     text-align: center;
 }
 #form-header h1{
-    color: #9090ff;
+    color: #ffffff;
     font-family: 'Quicksand', sans-serif;
     font-size: 70px;
 }
 #linha hr{
-    background-color: #000;
+    background-color: rgb(255, 255, 255);
     height: 2px;;
 }
 
