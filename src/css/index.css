@@ -1,4 +1,45 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+.navbar{
+    background-image: url(/img/backgroudn\ nav.jpg);
+}
+
+#logoBlue{
+    margin: 2px;
+}
+
+.btn{
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.btn-outline-primary{
+    border-color: white;
+}
+.btn-outline-primary:not(:disabled):not(.disabled) {
+    color: white;
+    border-radius: 100px;
+}
+
+.form-inline {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#txtBlue{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-family: 'Squada One', cursive;
+    font-size: xx-large;
+}
+
+.navbar-brand{
+    margin: 0 auto;
+}
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 body{
     box-sizing: border-box;
     display: flex;
@@ -7,7 +48,7 @@ body{
     background-color: #eeeeee;
 }
 section{
-    margin: 170px 0px 0px 0px;
+    margin: 180px 0px 0px 0px;
     width: 500px;
     height: 500px;
 }
@@ -27,7 +68,6 @@ section{
 #btn{
     display: flex;
     justify-content: center;
-    /* justify-content: space-between; */
 }
 
 
@@ -40,4 +80,4 @@ button{
     padding: 5%;
     height: 60px;
     width: 150px;
-}
+} */

@@ -5,12 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/login.css">
+
     <title>Blue Bank - Login</title>
 </head>
-<body> 
+<body>
+    
+    <header>
+
+            <div id="menu">
+    
+                <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                    
+    
+                    <img src="/img/logo bank.png" alt="Logo Blue Bank" height="50rem" id="logoBlue">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <a class="navbar-brand" id="txtBlue" href="/index.html">Blue Bank</a>
+    
+                    <form class="form-inline">
+                        <a href="/src/html/cadastro.html"><button type="button" class="btn btn-primary mr-sm-4">Cadastro</button></a>
+                        <a href="/src/html/login.html"><button type="button" class="btn btn-primary">Login</button></a>
+                    </form>
+    
+                </nav>
+    
+            </div>
+    </header>
+    
     <section>        
             <div id="form-header">
                 <h1>Blue Bank - Login</h1>
@@ -36,7 +66,6 @@
                     </div>
 
                     <div id="form-button">
-                        <a href="/index.html"><button type="button" class="btn btn-primary">Cancelar</button></a>
                         <button type="button" class="btn btn-primary" data-element="minhadiv" id="login-btn" onclick="login()" onclick="Mudarestado('minhadiv')">Login</button>
                     </div>
                 </div>
@@ -50,7 +79,7 @@
 
 
     <!-- JavaScript (Opcional) -->
-    <script src="./js/jquery.js"></script>
+    <script src="/src/js/jquery.js"></script>
     <script src="/src/js/functions.js"></script>
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
