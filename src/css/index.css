@@ -29,7 +29,9 @@
     display: flex;
     align-content: center;
     justify-content: center;
+    margin-left: 80%;
 }
+
 
 /* @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 body{
