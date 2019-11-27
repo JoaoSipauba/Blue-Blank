@@ -7,29 +7,6 @@ body{
     background-image: url(/img/backgroudn\ nav.jpg);
 }
 
-/* NAV */
-
-.navbar{
-    background-color: rgba(255, 255, 255, 0.842);
-    width: 100%;
-    height: 8vh;
-}
-
-#logoBlue{
-    margin: 2px;
-}
-
-.btn{
-    font-size: 14px;
-    font-family: 'Noto Sans JP', sans-serif;
-    
-}
-
-
-.btn-primary:not(:disabled):not(.disabled) {
-    border-radius: 10px;
-}
-
 .form-inline {
     display: flex;
     align-content: center;
@@ -39,18 +16,27 @@ body{
 #txtBlue{
     display: flex;
     justify-content: center;
-    color: #0069d9;
+    color: #ffffff;
     font-family: 'Squada One', cursive;
     font-size: 50px;
 }
 
-.navbar-brand{
-    margin: 0 auto;
+section{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
 }
 
+#btnLogin a{
+    
+    border-bottom: oldlace;
 
-section{
-    margin: 180px 0px 0px 0px;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#logoLeft{
+    margin: 0px 60px 0px 0px;
 }
 
 #formulario{
@@ -83,7 +69,11 @@ section{
 }
 
 #form-button button{
-    margin-right: 10px;
+    border-radius: 100px;
+    height: 5.5vh;
+    width: 10vw;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 
 #form-btn{
@@ -95,23 +85,19 @@ section{
     margin: 10px;
 }
 
-
 .form-control{
     width: 500px;
 }
 #form-header{
     text-align: center;
 }
-#form-header h1{
+
+
+#form-header a{
     color: #ffffff;
     font-family: 'Quicksand', sans-serif;
     font-size: 70px;
 }
-#linha hr{
-    background-color: rgb(255, 255, 255);
-    height: 2px;;
-}
-
 
 /*Caixa flutuante*/
 .hide {

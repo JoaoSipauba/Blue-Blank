@@ -10,68 +10,49 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/login.css">
 
     <title>Blue Bank - Login</title>
 </head>
 <body>
     
-    <header>
+    <section>
+        
+        <div id="logoLeft">
 
-            <div id="menu">
-    
-                <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-                    
-    
-                    <img src="/img/logo bank.png" alt="Logo Blue Bank" height="50rem" id="logoBlue">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-    
-                    <a class="navbar-brand" id="txtBlue" href="/index.html">Blue Bank</a>
-    
-                    <form class="form-inline">
-                        <a href="/src/html/cadastro.html"><button type="button" class="btn btn-primary mr-sm-4">Cadastro</button></a>
-                        <a href="/src/html/login.html"><button type="button" class="btn btn-primary">Login</button></a>
-                    </form>
-    
-                </nav>
-    
-            </div>
-    </header>
-    
-    <section>        
             <div id="form-header">
-                <h1>Login</h1>
+                <a href="/index.html"><img src="/img/blue bank logo.png"><a>
+                <h3>O seu banco digital</h3>
             </div>
             
-            <div id="linha">
-                <hr>
-            </div>
+        </div>
+            
+            
+        <form>
+            <div id="formulario">
 
-            <form>
-
-                <div id="formulario">
-
-                    <div class="form-group">
-                        <label for="exampleInputNumberOfCount"><h3>Número da conta</h3></label>
-                        <input type="text" class="form-control" id="account" placeholder="X.XXX-X" maxlength="7">
-                    </div>
-    
-    
-                    <div class="form-group">
-                        <label for="exampleInputPassword1"><h3>Senha</h3></label>
-                        <input type="password" class="form-control" id="password" aria-describedby="password" placeholder="Senha">
-                    </div>
-
-                    <div id="form-button">
-                        <button type="button" class="btn btn-primary" data-element="minhadiv" id="login-btn" onclick="login()" onclick="Mudarestado('minhadiv')">Login</button>
-                    </div>
+                <div class="form-group">
+                    <label for="exampleInputNumberOfCount"><h3>Número da conta</h3></label>
+                    <input type="text" class="form-control" id="account" placeholder="X.XXX-X" maxlength="7">
                 </div>
 
-              
-            </form>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1"><h3>Senha</h3></label>
+                    <input type="password" class="form-control" id="password" aria-describedby="password" placeholder="Senha">
+                </div>
+
+                <div id="form-button">
+                    <button type="button" class="btn btn-primary" data-element="minhadiv" id="login-btn" onclick="login()" onclick="Mudarestado('minhadiv')">ENTRAR</button>
+                </div>
+            </div>
+
+            
+        </form>
 
             
 
