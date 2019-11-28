@@ -6,7 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/src/css/cadastro.css">
@@ -16,10 +19,37 @@
 
 <body>
 
+    <header>
+
+            <div id="menu">
+    
+                <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                    
+    
+                    <img src="/img/logo bank.png" alt="Logo Blue Bank" height="50rem" id="logoBlue">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <a class="navbar-brand" id="txtBlue" href="/index.html">Blue Bank</a>
+    
+                    <form class="form-inline">
+                        <a href="/src/html/cadastro.html"><button type="button" class="btn btn-primary mr-sm-4">Cadastro</button></a>
+                        <a href="/src/html/login.html"><button type="button" class="btn btn-primary">Login</button></a>
+                    </form>
+    
+                </nav>
+    
+            </div>
+    </header>
+        
+
+
     <section>
 
         <div id="form-header">
-            <h1>Blue Bank - Cadastro</h1>
+            <h1>Cadastro</h1>   
         </div>
 
         <div id="linha">
@@ -27,61 +57,74 @@
         </div>
 
         <form>
-            <div class="form-group">
-                <label for="exampleInputNumberOfCount">
-                    <h3>CPF</h3>
-                </label>
-                <input type="text" class="form-control" id="CPF" placeholder="XXX.XXX.XXX-XX" maxlength="14">
-            </div>
+            <div id="formulario">
 
-            <div class="form-group">
-                <label for="exampleInputEmail1">
-                    <h3>Email</h3>
-                </label>
-                <input type="text" class="form-control" id="email" aria-describedby="userHelp"
-                    placeholder="pedrodasilva@gmail.com">
-            </div>
+                <div class="form-group">
+                    <label for="exampleInputNumberOfCount">
+                        <h3>CPF</h3>
+                    </label>
+                    <input type="number" class="form-control" id="CPF" placeholder="XXX.XXX.XXX-XX" maxlength="14">
+                </div>
 
-            <div class="form-group">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">
+                        <h3>Email</h3>
+                    </label>
+                    <input type="email" class="form-control" id="email" aria-describedby="userHelp"
+                        placeholder="pedrodasilva@gmail.com">
+                </div>
+
+                <div class="form-group">
                     <label for="exampleInputNumberOfCount">
                         <h3>Nome</h3>
                     </label>
                     <input type="text" class="form-control" id="nome" placeholder="Pedro Da Silva" maxlength="80">
                 </div>
 
-            <div class="form-group">
-                <label for="exampleInputNumberOfCount">
-                    <h3>Número da conta</h3>
-                </label>
-                <input type="text" class="form-control" id="account" placeholder="x.xxx-x" maxlength="7">
+                <div class="form-group">
+                    <label for="exampleInputNumberOfCount">
+                        <h3>Número da conta</h3>
+                    </label>
+                    <input type="number" class="form-control" id="account" placeholder="x.xxx-x" maxlength="7">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">
+                        <h3>Senha</h3>
+                    </label>
+                    <input type="password" class="form-control" id="password" aria-describedby="password"
+                        placeholder="Senha">
+                </div>
+
             </div>
 
-
-            <div class="form-group">
-                <label for="exampleInputPassword1">
-                    <h3>Senha</h3>
-                </label>
-                <input type="password" class="form-control" id="password" aria-describedby="password" placeholder="Senha">
+            <div id="alert" class="alert alert-danger alert-dismissible fade show " role="alert" hidden>
+                <strong>Preencha todos os campos!</strong>
             </div>
 
-            
-            <a href="/index.html"><button type="button" class="btn btn-primary">Cancelar</button></a>
-            <button type="button" class="btn btn-primary" onclick = register() id="btAbrirModal">Concluido</button>
+            <div id="form-btn">
+
+                <button type="button" class="btn btn-primary" onclick = register() id="btAbrirModal">Concluido</button>
+                
+            </div>
 
         </form>
 
         <div id="modal" class="hide">
             <div class="modal-bg"></div>
+
             <div class="modal-content">
                 <h3>Cadastro Concluido!</h3>
             </div>
+
         </div>
 
     </section>
 
     <!-- JavaScript (Opcional) -->
     <script src="/src/js/jquery.js"></script>
-    <script src="/src/js/index.js"></script>
+    <script src="/src/js/functions.js"></script>
     <!-- <script src="/mysql.js"></script> -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

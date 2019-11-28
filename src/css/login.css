@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/backgroudn\ nav.jpg);
+}
+
+.form-inline {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#txtBlue{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-family: 'Squada One', cursive;
+    font-size: 50px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+#btnLogin a{
+    
+    border-bottom: oldlace;
+
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#logoLeft{
+    margin: 0px 60px 0px 0px;
+}
+
+#formulario{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+
+#formulario h3{
+    color: aliceblue;
+}
+
+.form-control{
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+#formulario input{
+    background-color: transparent;
+    color: aliceblue;
+    border-bottom: 1px solid aliceblue;
+}
+
+
+#formulario ::placeholder{
+    color: rgba(240, 248, 255, 0.623);
+}
+
+#form-button button{
+    border-radius: 100px;
+    height: 5.5vh;
+    width: 10vw;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#form-btn{
+    display: flex;
+    justify-content: center;   
+}
+
+#form-btn button {
+    margin: 10px;
+}
+
+.form-control{
+    width: 500px;
+}
+#form-header{
+    text-align: center;
+}
+
+
+#form-header a{
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 70px;
+}
+
+/*Caixa flutuante*/
+.hide {
+    display: none;
+}
+
+.modal-bg {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: gainsboro;
+    opacity: 0.5;
+}
+
+.modal-content {
+    position: fixed;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    width: 200px;
+    height: 30px;
+    line-height: 20px;
+    top: 50px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #21abce;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.modal-content h3{
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 1px;
+}
